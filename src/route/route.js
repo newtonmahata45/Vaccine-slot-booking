@@ -12,7 +12,7 @@ router.post("/register", registerUser);
 router.post("/login", logIn);
 router.post("/register/:userId/:doseNo",authenticate,authorization, slotReg);
 router.put("/update/:userId/:doseNo",authenticate,authorization, updateSlot);
-router.get("/admin/:key", getByAdmin);
+router.get("/admin/:userId",authenticate,authorization, getByAdmin);
 router.get("/availableSlots",authenticate, availableSlots);
 
 

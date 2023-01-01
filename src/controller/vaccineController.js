@@ -133,7 +133,7 @@ const updateSlot = async function (req, res) {
 
 let getByAdmin = async function (req, res) {
     try {
-        if (req.params.key != 5) { return res.status(401).send({ status: false, message: "You are not the Admin" }) }
+        if (req.params.userId != "63b1a25682e679457db91289") { return res.status(401).send({ status: false, message: "You are not the Admin" }) }
         let data = req.query
         let doseNo = data.doseNo
         let query = { age, pincode } = data
