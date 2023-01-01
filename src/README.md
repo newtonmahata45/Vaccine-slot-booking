@@ -9,7 +9,7 @@ Task Description:
     Arogyasetu Cowin part).
     App has the functionality to
 
-(for user)
+(for user):
 
 ● Register user (Mandatory fields: Name, PhoneNumber, Age, Pincode, Aadhar
     No)
@@ -24,7 +24,7 @@ Task Description:
 ● User can update/change his registered slot, till 24 hours prior to his registered
     slot time
 
-(for admin)
+(for admin):
 
 ● Login using admin credentials (There won’t be any api for registering the admin.
     His credentials should be manually created in the database)
@@ -33,7 +33,8 @@ Task Description:
 
 ● Check the registered slots for the vaccine (first dose /second dose/total) on a
     given day
-    Vaccine slot details
+
+Vaccine slot details:
 
 ● Assume that vaccination drive is happening only from 1st June ‘21 to 30th June
     ‘21

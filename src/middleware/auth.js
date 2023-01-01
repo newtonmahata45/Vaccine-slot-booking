@@ -1,8 +1,11 @@
+let jwt = require("jsonwebtoken")
+
+let userModel = require("../model/userModel");
+
+const { isValidObjectId} = require("../validator/validator")
 const authenticate = function (req, res, next) {
     try {
         const token = req.headers["x-api-key"]  // token from headers
-
-
         if (!token) {
             return res.status(400).send({ status: false, message: "token must be present in headers" })
         }
@@ -23,9 +26,6 @@ const authenticate = function (req, res, next) {
         return res.status(500).send({ status: false, message: error.message })
     }
 }
-
-
-
 
 const authorization = async function (req, res, next) {
     try {
