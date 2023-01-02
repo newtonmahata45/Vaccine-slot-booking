@@ -21,7 +21,7 @@ const slotReg = async function (req, res) {
         }
         else if (1 <= minute && minute <= 30) { minute = 30 }
         if ((!hour) || (hour > 17) || (hour < 10)) { return res.status(400).send({ status: false, message: "Hour will be in between 10-16 or 1-4 in time" }) }
-        if (minute !== 0 || minute !== 30) { return res.status(400).send({ status: false, message: "Minute will be in Number" }) }
+        if (minute !== 0 && minute !== 30) { return res.status(400).send({ status: false, message: "Minute will be in Number" }) }
         if (hour == 17 && minute == 00) { return res.status(400).send({ status: false, message: "16:30 is the last time slot" }) }
         date = +date
         if (!date || date < 1 || date > 30) { return res.status(400).send({ status: false, message: "Give the date in between 1-30" }) }
