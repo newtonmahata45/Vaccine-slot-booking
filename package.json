@@ -1,6 +1,6 @@
 {
   "name": "vaccine-slot",
-  "version": "1",
+  "version": "2",
   "description": "Slot booking for vaccinetion",
   "main": "index.js",
   "scripts": {
