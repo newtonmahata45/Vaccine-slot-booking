@@ -6,8 +6,6 @@ const {authenticate,authorization} =require("../middleware/auth")
 
 
 
-
-
 router.post("/register", registerUser);
 router.post("/login", logIn);
 router.post("/register/:userId/:doseNo",authenticate,authorization, slotReg);
